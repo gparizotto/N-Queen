@@ -1,7 +1,8 @@
 import numpy as np
 
-size = 8
+size = 15
 board = np.full((size, size), False, object)
+
 
 def try_position(line, column):
     # check if a queen is attacking the line
@@ -69,3 +70,4 @@ if var:
     print(board)
 else:
     print("No solution found!")    
+    
